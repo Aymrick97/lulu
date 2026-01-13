@@ -1354,3 +1354,197 @@ label {
     font-size: 2.2rem;
   }
 }
+/* =========================
+   RESPONSIVE MOBILE (<600px)
+========================= */
+@media screen and (max-width: 600px) {
+  /* NAVIGATION */
+  nav {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  /* HERO SECTIONS */
+  .hero-basset,
+  .hero-hator,
+  .hero-nout,
+  .hero-contact {
+    height: 50vh;
+    padding: 0 10px;
+  }
+
+  .hero-basset .hero-text,
+  .hero-hator .hero-text,
+  .hero-nout .hero-text,
+  .hero-contact .hero-text {
+    padding: 20px 15px;
+    font-size: 0.9rem;
+  }
+
+  .hero-nout h1,
+  .hero-contact h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-nout p,
+  .hero-contact p {
+    font-size: 0.9rem;
+  }
+
+  /* INTRO SECTIONS */
+  .intro-basset,
+  .intro-hator,
+  .intro-nout {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px auto;
+  }
+
+  .intro-basset .intro-image img,
+  .intro-hator .intro-image img,
+  .intro-nout .intro-image img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  /* DETAILS SECTIONS */
+  .details-basset,
+  .details-hator,
+  .details-nout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 10px;
+  }
+
+  /* PRICING */
+  .pricing-basset .price-cards,
+  .pricing-hator .price-cards,
+  .pricing-nout .price-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .price-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* CTA */
+  .cta-basset,
+  .cta-hator,
+  .cta-nout {
+    padding: 40px 10px;
+  }
+
+  .cta-basset a,
+  .cta-hator a,
+  .cta-nout a {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* MOSAÏQUE */
+  .mosaic-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    gap: 15px;
+  }
+
+  /* COLLECTIONS */
+  .collections {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .collection-image {
+    height: 250px;
+  }
+
+  .collection-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .collection-content ul li {
+    font-size: 0.9rem;
+  }
+
+  .btn-collection {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* SERVICES */
+  .section2 {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .Service1 img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .description {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  /* FORM CONTACT */
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 5%;
+  }
+
+  .contact-image img {
+    max-height: 250px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+}
