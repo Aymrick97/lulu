@@ -938,7 +938,7 @@ label {
 /* CTA SECTION HATOR */
 /* ===== CTA HATOR avec image de fond ===== */
 .cta-hator {
-  background: url("/images/3B4A4411.jpeg") center/cover no-repeat;
+  background: url("images/3B4A4411.jpeg") center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 80px 20px;
