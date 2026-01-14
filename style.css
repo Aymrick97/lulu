@@ -1469,8 +1469,8 @@ label {
   .section-1 .carrousel-col img,
   .section3 .carrousel-col img {
     width: 100% !important;
-    height: 400px !important;
-    max-height: 400px !important;
+    height: 800px !important;
+    max-height: 800px !important;
     object-fit: contain !important;
     margin: 0 auto;
   }
