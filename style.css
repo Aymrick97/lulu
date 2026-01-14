@@ -1596,3 +1596,33 @@ label {
     font-size: 0.9rem !important;
   }
 }
+/* LOGO RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 70px; /* réduire la hauteur du logo */
+    margin-bottom: 40px; /* réduire l'espacement sous le logo */
+    padding: 0 10px; /* un peu de padding si nécessaire */
+  }
+
+  .logo img {
+    max-height: 100%; /* s'adapte à la hauteur du container */
+    width: auto; /* conserve les proportions */
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* TITRE RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .titre {
+    font-size: 16px; /* texte un peu plus petit */
+    margin-left: 0; /* supprime le décalage à gauche */
+    margin-right: 0; /* ajoute marge à droite si besoin */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* centre le texte */
+  }
+
+  .titre:last-child {
+    text-align: center; /* assure que le dernier enfant reste centré */
+  }
+}
