@@ -39,7 +39,6 @@ nav li {
 }
 a {
   text-decoration: none;
-  color: #000;
 }
 #active {
   color: #fe0000;
@@ -747,7 +746,7 @@ label {
 /* HERO BASTET */
 .hero-basset {
   height: 80vh;
-  background: url("images/nout.jpeg") center/cover no-repeat;
+  background: url("images/basset.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -852,7 +851,7 @@ label {
 /* HERO HATOR */
 .hero-hator {
   height: 80vh;
-  background: url("images/3B4A3205.jpeg") center/cover no-repeat;
+  background: url("images/hator.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -981,7 +980,7 @@ label {
 
 /* ===== HERO NOUT ===== */
 .hero-nout {
-  background: url("images/basset.jpg") center/cover no-repeat;
+  background: url("images/nout.jpeg") center/cover no-repeat;
   height: 60vh;
   display: flex;
   align-items: center;
