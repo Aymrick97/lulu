@@ -1348,11 +1348,14 @@ label {
   nav {
     margin: 0 auto;
     padding: 0 10px;
+    text-align: center;
   }
 
   ul {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row !important; /* garder horizontal */
+    justify-content: center !important; /* centrer horizontalement */
+    gap: 15px !important; /* espacement entre les items */
+    flex-wrap: wrap; /* retour à la ligne si écran trop petit */
     align-items: center;
   }
 
