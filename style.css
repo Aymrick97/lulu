@@ -71,6 +71,8 @@ section {
   justify-self: center;
   align-self: center;
   max-width: 1200px;
+
+  margin-left: 10px;
 }
 
 /* 
@@ -1467,8 +1469,8 @@ label {
   .section-1 .carrousel-col img,
   .section3 .carrousel-col img {
     width: 100% !important;
-    height: 800px !important;
-    max-height: 800px !important;
+    height: 200px !important;
+    max-height: 200px !important;
     object-fit: contain !important;
     margin: 0 auto;
   }
@@ -1596,7 +1598,7 @@ label {
 /* LOGO RESPONSIVE */
 @media screen and (max-width: 600px) {
   .logo {
-    height: 300px; /* réduire la hauteur du logo */
+    height: 100px; /* réduire la hauteur du logo */
     margin-bottom: 40px; /* réduire l'espacement sous le logo */
     padding: 0 10px; /* un peu de padding si nécessaire */
   }
