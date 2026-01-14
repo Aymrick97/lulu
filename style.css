@@ -20,6 +20,7 @@ nav {
   border-color: #fe0000;
   justify-content: center;
   margin-right: 80px;
+  margin-left: auto;
 }
 
 ul {
@@ -1469,7 +1470,7 @@ label {
   .section-1 .carrousel-col img,
   .section3 .carrousel-col img {
     width: 100% !important;
-    height: 200px !important;
+    height: auto !important;
     max-height: 200px !important;
     object-fit: contain !important;
     margin: 0 auto;
@@ -1598,7 +1599,7 @@ label {
 /* LOGO RESPONSIVE */
 @media screen and (max-width: 600px) {
   .logo {
-    height: 100px; /* réduire la hauteur du logo */
+    height: 70px; /* réduire la hauteur du logo */
     margin-bottom: 40px; /* réduire l'espacement sous le logo */
     padding: 0 10px; /* un peu de padding si nécessaire */
   }
