@@ -6,8 +6,7 @@ body {
 
 body {
   font-family: "Playfair Display", serif;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
   justify-content: center;
 }
 /* 
@@ -71,6 +70,8 @@ section {
   justify-self: center;
   align-self: center;
   max-width: 1200px;
+  justify-content: center;
+  justify-items: center;
 }
 
 /* 
