@@ -1339,31 +1339,19 @@ label {
   font-size: 1.2rem;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
-@media screen and (max-width: 900px) {
-  .contact-section {
-    flex-direction: column;
-    padding: 50px 5%;
-  }
+/* =========================
+   RESPONSIVE MOBILE (<600px)
+========================= */
 
-  .hero-contact {
-    height: 300px;
-  }
-
-  .hero-contact h1 {
-    font-size: 2.2rem;
-  }
-}
+/* NAVIGATION */
 @media screen and (max-width: 600px) {
-  /* ---------------- NAVIGATION ---------------- */
   nav {
     margin: 0 auto;
     padding: 0 10px;
   }
 
   ul {
-    display: flex; /* reste horizontal */
-    justify-content: space-around;
+    flex-direction: column;
     gap: 10px;
     align-items: center;
   }
@@ -1372,210 +1360,235 @@ label {
     text-align: center;
   }
 
-  /* ---------------- HERO SECTIONS ---------------- */
+  /* HERO SECTIONS */
   .hero-basset,
   .hero-hator,
   .hero-nout,
   .hero-contact {
-    height: 50vh;
-    padding: 0 10px;
+    height: auto;
+    min-height: 50vh;
+    padding: 20px 10px;
+    text-align: center;
   }
 
   .hero-basset .hero-text,
   .hero-hator .hero-text,
   .hero-nout .hero-text,
   .hero-contact .hero-text {
-    padding: 20px 15px;
-    font-size: 0.9rem;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .hero-nout h1,
-  .hero-contact h1 {
+  .hero-contact h1,
+  .hero-basset h1,
+  .hero-hator h1 {
     font-size: 1.8rem;
+    text-align: center;
   }
 
   .hero-nout p,
-  .hero-contact p {
+  .hero-contact p,
+  .hero-basset p,
+  .hero-hator p {
     font-size: 0.9rem;
+    text-align: center;
   }
 
-  /* ---------------- INTRO SECTIONS ---------------- */
+  /* INTRO SECTIONS */
   .intro-basset,
   .intro-hator,
   .intro-nout {
-    grid-template-columns: 1fr;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 20px;
     margin: 50px auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .intro-basset .intro-text,
+  .intro-hator .intro-text,
+  .intro-nout .intro-text {
+    width: 100%;
+    text-align: center;
   }
 
   .intro-basset .intro-image img,
   .intro-hator .intro-image img,
   .intro-nout .intro-image img {
     width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 300px;
-    object-fit: contain; /* toutes les images passent en contain */
+    object-fit: contain;
+    margin: 0 auto;
   }
 
-  /* ---------------- DETAILS SECTIONS ---------------- */
+  /* DETAILS SECTIONS */
   .details-basset,
   .details-hator,
   .details-nout {
-    grid-template-columns: 1fr;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 30px;
-    padding: 40px 10px;
+    padding: 40px 15px;
+    text-align: center;
   }
 
-  .details-basset img,
-  .details-hator img,
-  .details-nout img {
-    object-fit: contain;
+  .details-basset .detail-block,
+  .details-hator .detail-block,
+  .details-nout .detail-block {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .details-basset .detail-block img,
+  .details-hator .detail-block img,
+  .details-nout .detail-block img {
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
   }
 
-  /* ---------------- PRICING ---------------- */
-  .pricing-basset .price-cards,
-  .pricing-hator .price-cards,
-  .pricing-nout .price-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  /* CARROUSELS SECTION 1 & 3 */
+  .section-1 .col-2,
+  .section3 .col {
+    overflow-x: scroll !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
   }
 
-  .price-card {
-    width: 90%;
-    max-width: 300px;
+  .section-1 .carrousel-col img,
+  .section3 .carrousel-col img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 200px !important;
+    object-fit: contain !important;
+    margin: 0 auto;
   }
 
-  /* ---------------- CTA ---------------- */
+  /* COLLECTIONS */
+  .collections {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 0 10px;
+  }
+
+  .collection-image {
+    height: 250px !important;
+  }
+
+  .collection-content h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .collection-content ul li {
+    font-size: 0.9rem !important;
+  }
+
+  .btn-collection {
+    padding: 10px 20px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* SERVICES SECTION */
+  .section2 {
+    flex-direction: column !important;
+    gap: 30px !important;
+    align-items: center !important;
+  }
+
+  .Service1 img {
+    width: 90% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .description {
+    width: 90% !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* FORM CONTACT */
+  .contact-section {
+    flex-direction: column !important;
+    padding: 30px 5% !important;
+    gap: 20px !important;
+  }
+
+  .contact-image img {
+    max-height: 250px !important;
+    width: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .contact-form {
+    padding: 20px !important;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem !important;
+    padding: 10px !important;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 5% !important;
+    text-align: center !important;
+  }
+
+  .footer-container {
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  .footer-col {
+    min-width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* MOSAÏQUE PHOTO */
+  .mosaic-container {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 200px !important;
+    gap: 15px !important;
+  }
+
+  .mosaic-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  /* CTA SECTIONS */
   .cta-basset,
   .cta-hator,
   .cta-nout {
-    padding: 40px 10px;
+    padding: 40px 10px !important;
+    text-align: center !important;
   }
 
   .cta-basset a,
   .cta-hator a,
   .cta-nout a {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  /* ---------------- CARROUSELS ---------------- */
-  .section-1 .col-2,
-  .section3 .col {
-    overflow-x: scroll;
-    flex-wrap: nowrap;
-  }
-
-  .section-1 .carrousel-col img,
-  .section3 .carrousel-col img {
-    object-fit: contain; /* contain sur carrousels */
-    height: auto;
-  }
-
-  /* ---------------- MOSAÏQUE ---------------- */
-  .mosaic-container {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 200px;
-    gap: 15px;
-  }
-
-  .mosaic-container img {
-    object-fit: contain; /* contain sur mobile */
-  }
-
-  /* ---------------- COLLECTIONS ---------------- */
-  .collections {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 10px;
-  }
-
-  .collection-image img {
-    height: 250px;
-    object-fit: contain; /* contain sur mobile */
-  }
-
-  .collection-content h2 {
-    font-size: 1.3rem;
-  }
-
-  .collection-content ul li {
-    font-size: 0.9rem;
-  }
-
-  .btn-collection {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-  }
-
-  /* ---------------- SERVICES ---------------- */
-  .section2 {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .Service1 img {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .description {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-
-  /* ---------------- FORM CONTACT ---------------- */
-  .contact-section {
-    flex-direction: column;
-    padding: 30px 5%;
-  }
-
-  .contact-image img {
-    max-height: 250px;
-    object-fit: contain;
-  }
-
-  .contact-form {
-    padding: 20px;
-  }
-
-  .contact-form h2 {
-    font-size: 1.5rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-
-  .contact-form button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-
-  /* ---------------- FOOTER ---------------- */
-  .footer {
-    padding: 40px 5%;
-    text-align: center;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .footer-col {
-    min-width: 100%;
-  }
-
-  .footer img {
-    object-fit: contain; /* contain sur mobile */
+    padding: 10px 20px !important;
+    font-size: 0.9rem !important;
   }
 }
