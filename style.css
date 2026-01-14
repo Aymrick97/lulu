@@ -1598,7 +1598,7 @@ label {
 /* LOGO RESPONSIVE */
 @media screen and (max-width: 600px) {
   .logo {
-    height: 100px; /* réduire la hauteur du logo */
+    height: 500px; /* réduire la hauteur du logo */
     margin-bottom: 40px; /* réduire l'espacement sous le logo */
     padding: 0 10px; /* un peu de padding si nécessaire */
   }
